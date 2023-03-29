@@ -1,0 +1,67 @@
+body{
+    display: block;
+    color: #272142;
+    font-family: "Cerebri Sans";
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#bdbfe3 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    margin: 8px;
+}
+.logo{
+    display: block;
+    margin-left: 500px;
+}
+.name{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-left: 110px;
+    margin-top: -70px;
+    display: block;
+    font-weight: 900;
+}
+.theme-button{
+    display: block;
+    background: #000033;
+    color: white;
+    font-size: 16px;
+    font-family: "Cerebri Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 25px;
+    transition: all 150ms ease-in-out;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+button:hover{
+    opacity: 0.9;
+    color: antiquewhite;
+    background-color: brown;
+}
+.container {
+    box-shadow: 0px 30px 50px rgba(57, 48, 90, 0.1);
+    margin: 50px auto;
+    background: #fff;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+}
+h1{
+    color: #272142;
+    font-size: 38px;
+    line-height: 98px;
+}
+h1 , h2{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+h2{
+    font-size: 24px;
+    color: #272142;
+    font-family: "PT Mono", monospace;
+    line-height: 57px;
+}
+}
