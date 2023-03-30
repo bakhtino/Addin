@@ -1,15 +1,133 @@
-body{
-    display: block;
+body {
+    /*background-color: #f9f7fe;*/
     color: #272142;
     font-family: "Cerebri Sans";
     background-color: #e5e5f7;
     background-image: radial-gradient(#bdbfe3 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
-    margin: 8px;
+  }
+  body.dark {
+    /* filter: invert(1); */
+    background-image: radial-gradient(#271d3c 0.5px, #100d18 0.5px);
+  }
+.dark-mode .theme-button {
+    background: #1c1824;
+    color: #fff;
+  }
+  .theme-button{
+    text-align: center;
 }
+body.dark .container{
+    background:  #1c1824;
+  }
+  body.dark h2, body.dark p{
+    color:  #d3cde0;
+  }
+  h1,
+h2 {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+h1 {
+  color: #272142;
+  font-size: 38px;
+  line-height: 48px;
+}
+body.dark h1 {
+  color: #d3cde0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #272142;
+  font-family: "PT Mono", monospace;
+  line-height: 27px;
+} 
+a {
+    color: #885df1;
+  }
+  
+  body.dark a {
+    color: #d3cde0;
+  }
+  
+  a:hover {
+    color: #9d88ca;
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  body.dark .theme-button {
+    background: #1c1824;
+    color: #fff;
+  }
+  
+  body.dark .theme-button:hover {
+    background: #885df1;
+  }
+  
+  .theme-button {
+    display: block;
+    background: #885df1;
+    color: white;
+    font-size: 16px;
+    font-family: "Cerebri Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    margin:  0 auto;
+  }
+  
+  .theme-button:hover {
+    opacity: .9;
+  }
+  
+  body.dark .theme-button:hover {
+    opacity: .9;
+  }
+  
+  .order-button {
+    background: #885df1;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 50px;
+    border: none;
+    font-size: 24px;
+    font-family: "Cerebri Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    border:  1px solid transparent;
+  }
+  
+  .order-button:hover {
+    opacity: 90%;
+    background: #fff;
+    color: #885df1 ;
+    border: 1px solid #885df1;
+  }
+  small {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-family: "PT Mono", monospace;
+  }  
 .logo{
     display: block;
-    margin-left: 500px;
+    margin-right: -500px;
 }
 .name{
     color: brown;
@@ -44,24 +162,11 @@ button:hover{
     box-shadow: 0px 30px 50px rgba(57, 48, 90, 0.1);
     margin: 50px auto;
     background: #fff;
-    max-width: 600px;
+    max-width: 550px;
     padding: 40px;
     border-radius: 16px;
-}
-h1{
-    color: #272142;
-    font-size: 38px;
-    line-height: 98px;
-}
-h1 , h2{
-    text-align: center;
-    margin: 15px 0;
-    font-weight: bold;
-}
-h2{
-    font-size: 24px;
-    color: #272142;
-    font-family: "PT Mono", monospace;
-    line-height: 57px;
-}
-}
+  }
+  
+  body.dark .container {
+    box-shadow: 0px 30px 50px rgba(4, 2, 12, 0.5);
+  }
