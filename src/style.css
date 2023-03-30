@@ -34,6 +34,7 @@ h1 {
   color: #272142;
   font-size: 38px;
   line-height: 48px;
+  margin-top: -100px;
 }
 body.dark h1 {
   color: #d3cde0;
@@ -59,8 +60,10 @@ a {
   }
   
   p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 30px;
+    text-align: justify;
+    margin-top: 45px;
   }
   body.dark .theme-button {
     background: #1c1824;
@@ -153,16 +156,35 @@ a {
     margin: 0 auto;
     margin-top: 70px;
 }
-button:hover{
-    opacity: 0.9;
-    color: antiquewhite;
-    background-color: brown;
-}
+.order-button {
+    background: #885df1;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+    font-size: 24px;
+    font-family: "Cerebri Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 30px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    border:  1px solid transparent;
+  }
+  
+  .order-button:hover {
+    opacity: 90%;
+    background: #fff;
+    color: #885df1 ;
+    border: 1px solid #885df1;
+  }
 .container {
     box-shadow: 0px 30px 50px rgba(57, 48, 90, 0.1);
     margin: 50px auto;
     background: #fff;
-    max-width: 700px;
+    max-width: 650px;
     padding: 200px;
     border-radius: 16px;
   }
@@ -178,6 +200,7 @@ button:hover{
     background-origin: 10px 10px;
     transition:  all 200ms ease-in-out;
     border-radius: 16px;
+    aspect-ratio: 40/40;
   }
   .zoom:hover {
     transform: scale(1.5);
@@ -188,13 +211,19 @@ button:hover{
         grid-gap:  40px;
         margin-left: -110px;
         margin-top: 25px;
+        
       }
       
       .grid img {
         object-fit: cover;
         aspect-ratio: 16 /16;
+        transition:  all 200ms ease-in-out;
+        border-radius: 16px;
       }
-      .conversation:hover{
-        transform: scale(1.5px);
-      }
+     .picture-grid:hover{
+        transform: scale(1.5);
+     } 
+     .description {
+        padding-bottom: 20px;
+      } 
       
