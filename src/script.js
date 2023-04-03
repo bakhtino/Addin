@@ -11,6 +11,7 @@ function order() {
       );
   }
 
+  
   function toggleTheme() {
     if (theme === "light") {
       theme = "dark";
@@ -31,3 +32,29 @@ function order() {
   let theme = "dark";
   let themeButton = document.querySelector("#theme-button");
   themeButton.addEventListener("click", toggleTheme)
+
+
+
+function darkMode(event){
+  event.preventDefault();
+  let lightMode= document.querySelector("#theme-button");
+  lightMode.innerHTML="Dark mode";
+    
+}
+
+  let changeTheme= document.querySelector("#theme-button");
+  changeTheme.addEventListener("click", darkMode);
+
+
+function changeMode(){
+  if (theme === "light") {
+    theme = "dark";
+    document.querySelector("#theme-button").classList.add("dark");
+  } else {
+    theme = "light";
+    document.querySelector("#theme-button").classList.remove("dark");
+  } 
+}
+
+  let mode= document.querySelector("#theme-button");
+  mode.addEventListener("click", changeMode);
