@@ -50,21 +50,16 @@ a {
     color: #885df1;
     display: inline;
     text-decoration: none;
-    
   }
   
   body.dark a {
     color: #d3cde0;
   }
-  
-  a:hover {
+    a:hover {
     color: #9d88ca;
     text-decoration: underline;
   }
-  
-
-
-  p {
+    p {
     font-size: 25px;
     line-height: 30px;
     text-align: justify;
@@ -149,6 +144,10 @@ a {
     margin-top: -70px;
     display: block;
     font-weight: 900;
+    text-decoration: none;
+}
+.name:hover{
+  text-decoration: underline;
 }
 .theme-button{
     display: block;
@@ -264,20 +263,20 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1c1824;
+  background-color: #e5e5f7;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-size: 15px;
+  font-size: 17px;
 }
-.light .dropdown-content {
+body.dark .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgb(253, 252, 252);
+    background: #1c1824;
+    min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /* Links inside the dropdown */
@@ -286,10 +285,15 @@ li {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-family: 'Alkatra', cursive;
+  font-size: 17px;
 }
-
+.mega-menu{
+  text-align: center;
+  margin-top: 25px;
+}
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: #885df1;}
+.dropdown-content a:hover {color: brown;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
