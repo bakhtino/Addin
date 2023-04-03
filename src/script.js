@@ -35,16 +35,22 @@ function order() {
 
 
 
-function darkMode(event){
-  event.preventDefault();
-  let lightMode= document.querySelector("#theme-button");
-  lightMode.innerHTML="Dark mode";
-    
-}
-
-  let changeTheme= document.querySelector("#theme-button");
+  function darkMode(event){
+    let lightMode = document.querySelector("#theme-button");
+    if (lightMode.innerHTML === "Dark mode") {
+      lightMode.innerHTML = "Light mode";
+      document.querySelector("body").classList.add("dark-mode");
+    } else {
+      lightMode.innerHTML = "Dark mode";
+      document.querySelector("body").classList.remove("dark-mode");
+    }
+  }
+  
+  let changeTheme = document.querySelector("#theme-button");
   changeTheme.addEventListener("click", darkMode);
 
+  
+  
 
 function changeMode(){
   if (theme === "light") {
@@ -58,3 +64,11 @@ function changeMode(){
 
   let mode= document.querySelector("#theme-button");
   mode.addEventListener("click", changeMode);
+
+  function changeMode() {
+    var x = "", i;
+    for (i=0; i<5; i++) {
+      x = x + "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = x;
+  }
