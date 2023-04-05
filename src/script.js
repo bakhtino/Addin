@@ -1,4 +1,10 @@
-
+if(window.screen.width <= 700) {
+  // do "mobile logic"
+  // code for mobile logic here
+} else {
+  // do "desktop logic"
+  // code for desktop logic here
+}
 function order() {
     let quanty = prompt("Have you learn English before?");
     let name = prompt("What is your first name?");
